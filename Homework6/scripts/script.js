@@ -1,15 +1,15 @@
 /// task 1
 // Напишите цикл for, который выводит консоль каждое второе число от 0 до 10
 console.log("Task 1")
-for (let index = 0; index <= 10; index+=2) {
-    console.log(index);
+for (let index = 0; index < 6; index++) {
+    console.log(index*2);
 }
 
 /// task 2
 // Напишите цикл for, который выводит в консоль  все числа от 55 до 20
 console.log("Task 2")
-for (let index = 55; index >=20; index--) {
-    console.log(index);
+for (let index = 0; index < 36; index++) {
+    console.log(55-index);
 }
 
 /// task 3
@@ -29,7 +29,7 @@ console.log(numbers_squared);
 /// task 4
 // Создать переменную last_elem и передать в нее последний элемент из сформированного массива numbers_squared (обратиться к элементу массива по индексу)
 console.log("Task 4")
-const last_elem = numbers_squared[6];
+const last_elem = numbers_squared[numbers_squared.length-1];
 console.log(last_elem);
 
 /// task 5
@@ -49,5 +49,6 @@ last_name: "Ivanov",
 age: 20, 
 salary: 500
 }
-console.log(`User's name is ${user.first_name} ${user.last_name}. He is ${user.age} years old.`);
+const {first_name, last_name, age, salary}=user
+console.log(`User's name is ${first_name} ${last_name}. He is ${age} years old.`);
 
